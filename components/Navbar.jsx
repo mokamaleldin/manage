@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* logo */}
         <div className="pt-2">
-            <img src='img/logo.svg' alt='' />
+            <Image src='img/logo.svg' alt='' priority  width={146} height={24}/>
         </div>
         {/* menu items */}
         <div className="hidden md:flex space-x-6">

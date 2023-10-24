@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -20,13 +21,12 @@ const Hero = () => {
                 </div>
             </div>
             {/* image */}
-            <div className="md:w-1/2 ">
-                <img src='img/illustration-intro.svg' alt='' />
+            <div className="md:w-1/2">
+                <Image src='/img/illustration-intro.svg' priority  alt='Description' width={500} height={500} />
             </div>
-
         </div>
     </section>
   )
 }
 
-export default Hero
+export default Hero;

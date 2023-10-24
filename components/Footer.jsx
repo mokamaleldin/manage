@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+
 
 const Footer = () => {
   return (
@@ -11,25 +13,25 @@ const Footer = () => {
                 </div>
                 {/* logo */}
                 <div>
-                    <img src='img/logo-white.svg' className='h-8' alt='' />
+                  <Image src='/img/logo-white.svg' alt='Logo' width={164} height={24} />
                 </div>
                 {/* social links container */}
                 <div className="flex justify-center space-x-4">
-                <a href='#'>
-                    <img src='img/icon-facebook.svg' alt='' className='h-8' />
-                  </a>
-                  <a href='#'>
-                    <img src='img/icon-youtube.svg' alt='' className='h-8' />
-                  </a>
-                  <a href='#'>
-                    <img src='img/icon-twitter.svg' alt='' className='h-8' />
-                  </a>
-                  <a href='#'>
-                    <img src='img/icon-pinterest.svg' alt='' className='h-8' />
-                  </a>
-                  <a href='#'>
-                    <img src='img/icon-instagram.svg' alt='' className='h-8' />
-                  </a>
+                    <a href="#">
+                        <Image src='/img/icon-facebook.svg' alt='Facebook Icon' width={32} height={32} />
+                    </a>
+                    <a href="#">
+                        <Image src='/img/icon-youtube.svg' alt='YouTube Icon' width={32} height={32} />
+                    </a>
+                    <a href="#">
+                        <Image src='/img/icon-twitter.svg' alt='Twitter Icon' width={32} height={32} />
+                    </a>
+                    <a href="#">
+                        <Image src='/img/icon-pinterest.svg' alt='Pinterest Icon' width={32} height={32} />
+                    </a>
+                    <a href="#">
+                        <Image src='/img/icon-instagram.svg' alt='Instagram Icon' width={32} height={32} />
+                    </a>
                 </div>
             </div>
             {/* list container */}
@@ -47,7 +49,7 @@ const Footer = () => {
             </div>
             {/* Input Container */}
             <div className="flex flex-col justify-between ">
-              <form action >
+              <form  action={true}>
                 <div className="flex space-x-3">
                   <input type="text" className="flex-1 px-4 rounded-full outline-none" placeholder='Updated in your inbox'/>
                   <button className="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
